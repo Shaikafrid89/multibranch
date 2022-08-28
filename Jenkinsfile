@@ -1,12 +1,12 @@
 pipeline{
-    agent any
+   agent any
     stages{
-        stage("Maven Build"){
-            when {
-                branch "develop"
-            }
-            steps{
-               sh "mvn package"
-            }
+        stage("maven muild"){
+            when{
+                baranch "develop"
+                steps{
+                sh "mvn package"
+                }
         }
-       
+    }
+}
