@@ -13,7 +13,7 @@ pipeline{
             when{
             branch "qa"
                 steps{
-                echo "hello world"
+                sh "mvn package"
                 }
             }
         }
